@@ -1,0 +1,65 @@
+---
+title: "Economic Development Across Income Groups"
+author: 
+    - Mark Arshavsky
+    - Chloe Guerrero
+    - Tiffany Wickens 
+    - Laura Zang (2549139)
+    - Chloe Zhao
+
+format: html
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+## Introduction 
+
+Insert introduction 
+
+## Data Description
+
+#### Data Sources and Indicators
+
+This project uses data from the World Bank World Development Indicators (WDI) database. We focus on three core measures of economic development: GDP per capita (constant USD), annual GDP growth, and the employment-to-population ratio.
+
+#### Data Preparation and Cleaning
+
+- The raw WDI data were imported into a SQLite database and reshaped from a wide format into a country–year structure. All indicators were combined into a unified dataset to support consistent cleaning and analysis.
+
+
+- The dataset was filtered to the 2000–2023 period to ensure comparability across indicators. Country and indicator metadata were separated from yearly observations to streamline analysis, and countries without income group classifications were excluded from income-group-based summaries.
+
+#### Income Group Classification
+
+Countries were categorized using World Bank income group classifications, which were linked to the country–year data using standard country codes. This framework enables systematic comparison of economic outcomes across income levels.
+
+#### Summary of Key Variables
+
+- Table 1 summarizes the distribution of GDP per capita, GDP growth, and employment ratios across income  groups. GDP per capita differs substantially across income classifications, while GDP growth and  employment ratios exhibit more moderate variation. 
+
+```{python}
+#| label: tbl-income-summary
+#| tbl-cap: "Average GDP per capita, GDP growth, and employment ratios by World Bank income group (2000–2023)."
+import pandas as pd
+
+summary = pd.read_csv("figures/summary_by_income.csv")
+summary
+```
+
+- Table 2 reports yearly average values of GDP per capita, GDP growth, and employment ratios by World Bank income group over the period 2000–2023. 
+
+```{python}
+#| label: tbl-income-yearly
+#| tbl-cap: "Yearly averages of economic indicators by income group."
+
+summary_year = pd.read_csv("figures/summary_by_income_year.csv")
+summary_year.head()
+```
+
+## Data Analysis
+
+## Results & Discussion 
+
+## Conclusion 
