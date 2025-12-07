@@ -1,5 +1,42 @@
 # final-project-group1
 
+## Data Pre-Processing 
+
+This project uses World Bank World Development Indicators (WDI) data to construct a cleaned country–year dataset and summary tables by income group. The data preparation pipeline is implemented in a Jupyter notebook and uses SQLite for structured storage.
+
+Required software: 
+- Python 3 (Conda recommended)
+- SQLite (via Python sqlite3)
+Required Python packages:
+- pandas, jupyter, nbformat, pathlib
+
+To install dependencies using conda:
+- conda install pandas jupyter nbformat -y
+
+### Run the data pipeline
+The following CSV files must be located in the data/ directory:
+- wdi_employment_raw.csv
+- wdi_gdp_growth_raw.csv
+- wdi_gdp_per_capita_raw.csv
+- wdi_income_group.csv
+
+Open and run all cells in: scripts/sql/data_cleaning.ipynb
+
+This notebook:
+- imports and reshapes raw WDI data
+- builds a SQLite database (econ_dev.db)
+- constructs a country–year panel dataset
+- merges World Bank income group classifications
+- generates summary tables by income group
+
+Running the notebook will produce:
+- A SQLite database stored at: data/econ_dev.db
+
+- Summary tables saved to: figures/summary_by_income.csv and figures/summary_by_income_year.csv
+
+These files are used directly in the final analysis and report.
+
+## Data Analysis
 
 ### Run the analysis_figures.py script
 
