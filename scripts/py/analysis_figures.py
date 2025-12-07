@@ -4,8 +4,6 @@ generate_figures.py
 - Loads figures/summary_by_income.csv and figures/summary_by_income_year.csv:
   * Bar chart: mean GDP per capita by income group
   * Line charts: indicator trends over time by income group
-  * Correlation heatmap across indicators (by income group averages)
-- Usage: python scripts/py/generate_figures.py
 """
 
 import os
