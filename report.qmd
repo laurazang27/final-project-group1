@@ -1,7 +1,7 @@
 ---
 title: "Economic Development Across Income Groups"
 author: 
-    - Mark Arshavsky (2556041)
+    - Mark Arshavsky ((2556041))
     - Chloe Guerrero
     - Tiffany Wickens 
     - Laura Zang (2549139)
