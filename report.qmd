@@ -76,7 +76,7 @@ summary_year.head()
 
 ![Relationship between GDP per capita and employment-to-population ratios by income group.](figures/gdp_pc_vs_employment_scat.png){#fig-gdp-pc-employment width=50%}
 
-![Correlation between GDP growth and employment-to-population ratios by income group.](figures/gdp_employment_pearson_correlations.png){#fig-gdp-emp-corr}
+![Correlation between GDP growth and employment-to-population ratios by income group.](figures/gdp_employment_pearson_correlations.png){#fig-gdp-emp-corr width=50%}
 
 ## Results & Discussion 
 
