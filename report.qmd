@@ -5,9 +5,14 @@ author:
     - Chloe Guerrero
     - Tiffany Wickens 
     - Laura Zang (2549139)
-    - Chloe Zhao
+    - Chloe Zhao (2593352)
 
-format: html
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: article
+    keep-tex: true
 execute:
   echo: false
   warning: false
@@ -16,7 +21,7 @@ execute:
 
 ## Introduction 
 
-Insert introduction 
+Global differences in economic development are a persistent and consequential feature of the global economy that shape patterns of opportunity, wellbeing, and inequality. The World Bank offers classifications that help us examine disparities across countries at different stages of development. In this project, we analyze data from the World Development Indicators (WDI) to compare patterns of economic development across income groups from 2000 to 2023. The project intends to explore these long-term dynamics.
 
 ## Data Description
 
