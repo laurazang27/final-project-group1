@@ -1,5 +1,9 @@
 # final-project-group1
 
+## Project Summary 
+
+This project analyzes patterns of economic development across World Bank income groups using World Development Indicators (WDI) data from 2000 to 2023. We examine GDP per capita, GDP growth, and employment-to-population ratios to compare levels, trends, and volatility across high-, middle-, and low-income economies. The analysis shows that while GDP per capita has increased globally, large income disparities between income groups persist, with limited convergence over time. GDP growth exhibits similar cyclical patterns across groups but is more volatile in lower-income countries, while employment rates remain relatively stable and comparable across income classifications, underscoring the central role of productivity differences in shaping global inequality.
+
 ## Data Pre-Processing 
 
 This project uses World Bank World Development Indicators (WDI) data to construct a cleaned country–year dataset and summary tables by income group. The data preparation pipeline is implemented in a Jupyter notebook and uses SQLite for structured storage.
