@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 Table&nbsp;1: Average GDP per capita, GDP growth, and employment ratios by World Bank income group (2000–2023).
 </figcaption>
 <div aria-describedby="tbl-income-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="85">
+<div class="cell-output cell-output-display" data-execution_count="13">
 <div>
 
 
@@ -183,7 +183,7 @@ Table&nbsp;1: Average GDP per capita, GDP growth, and employment ratios by World
 Table&nbsp;2: Yearly averages of economic indicators by income group.
 </figcaption>
 <div aria-describedby="tbl-income-yearly-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="86">
+<div class="cell-output cell-output-display" data-execution_count="14">
 <div>
 
 
@@ -252,13 +252,23 @@ Table&nbsp;2: Yearly averages of economic indicators by income group.
 </section>
 <section id="data-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="data-analysis">Data Analysis</h2>
+<div id="fig-gdp-emp-corr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gdp-emp-corr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/gdp_employment_pearson_correlations.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gdp-emp-corr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Correlation between GDP growth and employment-to-population ratios by income group.
+</figcaption>
+</figure>
+</div>
 <div id="fig-gdp-growth-box" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gdp-growth-box-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/gdp_growth_box.png" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gdp-growth-box-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Distribution of annual GDP growth rates by income group, 2000–2023.
+Figure&nbsp;2: Distribution of annual GDP growth rates by income group, 2000–2023.
 </figcaption>
 </figure>
 </div>
@@ -268,7 +278,7 @@ Figure&nbsp;1: Distribution of annual GDP growth rates by income group, 2000–2
 <img src="figures/gdp_pc_vs_employment_scat.png" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gdp-pc-employment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Relationship between GDP per capita and employment-to-population ratios by income group.
+Figure&nbsp;3: Relationship between GDP per capita and employment-to-population ratios by income group.
 </figcaption>
 </figure>
 </div>
@@ -278,7 +288,7 @@ Figure&nbsp;2: Relationship between GDP per capita and employment-to-population 
 <img src="figures/gdp_percapita_by_income.png" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gdp-pc-income-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Average GDP per capita by World Bank income group, 2000–2023.
+Figure&nbsp;4: Average GDP per capita by World Bank income group, 2000–2023.
 </figcaption>
 </figure>
 </div>
@@ -288,7 +298,7 @@ Figure&nbsp;3: Average GDP per capita by World Bank income group, 2000–2023.
 <img src="figures/global_indicator_trends.png" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-global-trends-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Global mean GDP per capita, GDP growth, and employment ratios over time.
+Figure&nbsp;5: Global mean GDP per capita, GDP growth, and employment ratios over time.
 </figcaption>
 </figure>
 </div>
@@ -298,7 +308,7 @@ Figure&nbsp;4: Global mean GDP per capita, GDP growth, and employment ratios ove
 <img src="figures/indicator_trends_by_income.png" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-trends-by-income-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Trends in economic indicators over time by World Bank income group.
+Figure&nbsp;6: Trends in economic indicators over time by World Bank income group.
 </figcaption>
 </figure>
 </div>
@@ -307,18 +317,24 @@ Figure&nbsp;5: Trends in economic indicators over time by World Bank income grou
 <h2 class="anchored" data-anchor-id="results-discussion">Results &amp; Discussion</h2>
 <section id="differences-in-economic-outcomes-across-income-groups" class="level3">
 <h3 class="anchored" data-anchor-id="differences-in-economic-outcomes-across-income-groups">Differences in Economic Outcomes Across Income Groups</h3>
-<p><a href="#fig-gdp-pc-income" class="quarto-xref">Figure&nbsp;3</a> illustrates substantial differences in average GDP per capita across World Bank income classifications over the 2000–2023 period. High-income countries exhibit by far the highest average GDP per capita, exceeding $35,000 (constant USD), while upper-middle-income countries average approximately $6,000. Lower-middle-income and low-income countries trail significantly behind, with average GDP per capita below $3,000 and $1,000 respectively. These disparities highlight persistent global inequality in income levels and economic capacity.</p>
+<p><a href="#fig-gdp-pc-income" class="quarto-xref">Figure&nbsp;4</a> illustrates substantial differences in average GDP per capita across World Bank income classifications over the 2000–2023 period. High-income countries exhibit by far the highest average GDP per capita, exceeding $35,000 (constant USD), while upper-middle-income countries average approximately $6,000. Lower-middle-income and low-income countries trail significantly behind, with average GDP per capita below $3,000 and $1,000 respectively. These disparities highlight persistent global inequality in income levels and economic capacity.</p>
 <p>In contrast, employment-to-population ratios show relatively modest variation across income groups (Table 1). While low-income countries tend to exhibit slightly higher employment ratios than high-income countries, the differences are small relative to income gaps. This suggests that employment rates alone do not capture differences in economic well-being, as employment in lower-income countries may be concentrated in lower-productivity and lower-wage activities.</p>
 </section>
 <section id="global-trends-in-economic-indicators-over-time" class="level3">
 <h3 class="anchored" data-anchor-id="global-trends-in-economic-indicators-over-time">Global Trends in Economic Indicators Over Time</h3>
-<p><a href="#fig-global-trends" class="quarto-xref">Figure&nbsp;4</a> presents average global trends in GDP per capita, GDP growth, and employment-to-population ratios. GDP per capita increases steadily from 2000 through 2019, reflecting sustained global economic expansion. A sharp decline occurs in 2020, coinciding with the economic impacts of the COVID-19 pandemic, followed by a partial recovery in subsequent years.</p>
+<p><a href="#fig-global-trends" class="quarto-xref">Figure&nbsp;5</a> presents average global trends in GDP per capita, GDP growth, and employment-to-population ratios. GDP per capita increases steadily from 2000 through 2019, reflecting sustained global economic expansion. A sharp decline occurs in 2020, coinciding with the economic impacts of the COVID-19 pandemic, followed by a partial recovery in subsequent years.</p>
 <p>GDP growth rates display greater year-to-year volatility than GDP per capita, fluctuating around 2–4% for most of the sample period. The most pronounced contraction appears in 2020, when global growth becomes strongly negative. Employment-to-population ratios remain relatively stable over time, though a noticeable decline around 2020 indicates widespread labor market disruptions during the global downturn.</p>
 </section>
 <section id="income-group-specific-dynamics" class="level3">
 <h3 class="anchored" data-anchor-id="income-group-specific-dynamics">Income-Group-Specific Dynamics</h3>
-<p>Disaggregating trends by income group reveals important heterogeneity (<a href="#fig-trends-by-income" class="quarto-xref">Figure&nbsp;5</a>). High-income countries consistently maintain the highest GDP per capita throughout the period, with gradual long-term growth interrupted mainly by global crises such as the 2008 financial crisis and the COVID-19 pandemic. Upper-middle-income countries experience steady growth in GDP per capita, modestly narrowing the gap with high-income economies, although substantial differences remain.</p>
+<p>Disaggregating trends by income group reveals important heterogeneity (<a href="#fig-trends-by-income" class="quarto-xref">Figure&nbsp;6</a>). High-income countries consistently maintain the highest GDP per capita throughout the period, with gradual long-term growth interrupted mainly by global crises such as the 2008 financial crisis and the COVID-19 pandemic. Upper-middle-income countries experience steady growth in GDP per capita, modestly narrowing the gap with high-income economies, although substantial differences remain.</p>
 <p>GDP growth rates across income groups follow similar cyclical patterns, suggesting that global economic shocks affect countries across development levels simultaneously. However, growth volatility is more pronounced in middle- and lower-income countries, indicating greater macroeconomic vulnerability. Employment-to-population ratios differ more visibly: low-income countries generally maintain higher employment ratios, while high-income countries exhibit lower but more stable employment levels, reflecting differences in demographics, labor market institutions, and economic structure.</p>
+</section>
+<section id="relationships-between-growth-income-and-employment" class="level3">
+<h3 class="anchored" data-anchor-id="relationships-between-growth-income-and-employment">Relationships Between Growth, Income, and Employment</h3>
+<p><a href="#fig-gdp-growth-box" class="quarto-xref">Figure&nbsp;2</a> summarizes the distribution of annual GDP growth rates across income groups from 2000 to 2023. Median GDP growth rates tend to be higher in middle-income countries than in high-income countries, reflecting faster growth potential in developing economies. However, growth volatility is also substantially greater for upper-middle- and lower-middle-income groups, as indicated by wider interquartile ranges and more extreme outliers. High-income countries display more stable growth patterns, consistent with stronger economic diversification and institutional resilience.</p>
+<p><a href="#fig-gdp-pc-employment" class="quarto-xref">Figure&nbsp;3</a> examines the relationship between GDP per capita and employment-to-population ratios across income groups. The scatter plot shows a clear stratification by income level: low-income countries cluster at low GDP per capita but relatively high employment rates, while high-income countries exhibit much higher income levels with more moderate employment ratios. This pattern suggests that higher employment shares in poorer countries may reflect greater reliance on informal or low-productivity labor rather than stronger labor market outcomes.</p>
+<p><a href="#fig-gdp-emp-corr" class="quarto-xref">Figure&nbsp;1</a> quantifies the relationship between GDP growth and employment using Pearson correlation coefficients by income group. The correlation is relatively weak for high-income and upper-middle-income countries, indicating that short-run economic growth is not strongly associated with employment changes. In contrast, lower-middle-income and low-income countries exhibit stronger positive correlations, suggesting that employment in these economies is more sensitive to fluctuations in economic growth and more vulnerable to macroeconomic shocks.</p>
 </section>
 <section id="interpretation-and-implications" class="level3">
 <h3 class="anchored" data-anchor-id="interpretation-and-implications">Interpretation and Implications</h3>
@@ -331,7 +347,8 @@ Figure&nbsp;5: Trends in economic indicators over time by World Bank income grou
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The evidence from 2000-2003 reveals a global economy characterized by changes in developmental indicators, and we see that structural inequality across income groups persists. All groups experienced gains in GDP per capita, but there remains a substantial disparity between high- and low-income countries. GDP growth rates tend to respond similarly to major global shocks, which suggests interconnected economic dynamics, though lower- and middle-income countries face greater volatility. Employment rates remain relatively stable and more equal, highlighting that differences in productivity drive most variation in economic well-being. Thus, we find that global development has advanced, but longstanding differences in economic capacity continue to shape countries’ development.</p>
+<p>The evidence from 2000–2023 reveals a global economy characterized by gradual improvements in key development indicators, alongside persistent structural inequality across income groups. All income groups experienced gains in GDP per capita over time, yet substantial disparities remain between high- and low-income countries. GDP growth rates tend to respond similarly to major global shocks, reflecting the interconnected nature of the global economy, although lower- and middle-income countries face substantially greater volatility. Employment-to-population ratios remain relatively stable and more similar across income groups, underscoring that differences in productivity—rather than employment levels—drive much of the observed variation in economic well-being.</p>
+<p>Moreover, the relationship analysis highlights important differences in how economic growth translates into labor market outcomes across income groups. While GDP growth and employment are only weakly correlated in high-income economies, lower-middle- and low-income countries exhibit stronger positive relationships, indicating that employment in these economies is more sensitive to macroeconomic fluctuations. This suggests that workers in poorer countries are more vulnerable to economic shocks, reinforcing the importance of policies aimed at improving economic stability and productivity growth. Overall, the findings suggest that global development has advanced, but longstanding gaps in economic capacity and resilience continue to shape uneven development trajectories across countries.</p>
 </section>
 
 </main>

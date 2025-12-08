@@ -65,6 +65,7 @@ summary_year.head()
 ```
 
 ## Data Analysis
+![Correlation between GDP growth and employment-to-population ratios by income group.](figures/gdp_employment_pearson_correlations.png){#fig-gdp-emp-corr}
 
 ![Distribution of annual GDP growth rates by income group, 2000–2023.](figures/gdp_growth_box.png){#fig-gdp-growth-box width=50%}
 
@@ -99,11 +100,11 @@ GDP growth rates across income groups follow similar cyclical patterns, suggesti
 
 ### Relationships Between Growth, Income, and Employment
 
-Figure @fig:gdp-growth-box summarizes the distribution of annual GDP growth rates across income groups from 2000 to 2023. Median GDP growth rates tend to be higher in middle-income countries than in high-income countries, reflecting faster growth potential in developing economies. However, growth volatility is also substantially greater for upper-middle- and lower-middle-income groups, as indicated by wider interquartile ranges and more extreme outliers. High-income countries display more stable growth patterns, consistent with stronger economic diversification and institutional resilience.
+@fig-gdp-growth-box summarizes the distribution of annual GDP growth rates across income groups from 2000 to 2023. Median GDP growth rates tend to be higher in middle-income countries than in high-income countries, reflecting faster growth potential in developing economies. However, growth volatility is also substantially greater for upper-middle- and lower-middle-income groups, as indicated by wider interquartile ranges and more extreme outliers. High-income countries display more stable growth patterns, consistent with stronger economic diversification and institutional resilience.
 
-Figure @fig:gdp-pc-employment examines the relationship between GDP per capita and employment-to-population ratios across income groups. The scatter plot shows a clear stratification by income level: low-income countries cluster at low GDP per capita but relatively high employment rates, while high-income countries exhibit much higher income levels with more moderate employment ratios. This pattern suggests that higher employment shares in poorer countries may reflect greater reliance on informal or low-productivity labor rather than stronger labor market outcomes.
+@fig-gdp-pc-employment examines the relationship between GDP per capita and employment-to-population ratios across income groups. The scatter plot shows a clear stratification by income level: low-income countries cluster at low GDP per capita but relatively high employment rates, while high-income countries exhibit much higher income levels with more moderate employment ratios. This pattern suggests that higher employment shares in poorer countries may reflect greater reliance on informal or low-productivity labor rather than stronger labor market outcomes.
 
-Figure @fig:gdp-emp-corr quantifies the relationship between GDP growth and employment using Pearson correlation coefficients by income group. The correlation is relatively weak for high-income and upper-middle-income countries, indicating that short-run economic growth is not strongly associated with employment changes. In contrast, lower-middle-income and low-income countries exhibit stronger positive correlations, suggesting that employment in these economies is more sensitive to fluctuations in economic growth and more vulnerable to macroeconomic shocks.
+@fig-gdp-emp-corr quantifies the relationship between GDP growth and employment using Pearson correlation coefficients by income group. The correlation is relatively weak for high-income and upper-middle-income countries, indicating that short-run economic growth is not strongly associated with employment changes. In contrast, lower-middle-income and low-income countries exhibit stronger positive correlations, suggesting that employment in these economies is more sensitive to fluctuations in economic growth and more vulnerable to macroeconomic shocks.
 
 ### Interpretation and Implications
 
