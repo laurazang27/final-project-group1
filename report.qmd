@@ -13,6 +13,7 @@ format:
   pdf:
     documentclass: article
     keep-tex: true
+    fig-pos: 'H'
 execute:
   echo: false
   warning: false
@@ -65,32 +66,15 @@ summary_year.head()
 
 ## Data Analysis
 
-![Correlation between GDP growth and employment-to-population ratios by income group.](figures/gdp_employment_pearson_correlations.png){#fig-gdp-emp-corr}
+![Distribution of annual GDP growth rates by income group, 2000–2023.](figures/gdp_growth_box.png){#fig-gdp-growth-box width=50%}
 
-![Distribution of annual GDP growth rates by income group, 2000–2023.](figures/gdp_growth_box.png){#fig-gdp-growth-box}
+![Relationship between GDP per capita and employment-to-population ratios by income group.](figures/gdp_pc_vs_employment_scat.png){#fig-gdp-pc-employment width=50%}
 
-![Relationship between GDP per capita and employment-to-population ratios by income group.](figures/gdp_pc_vs_employment_scat.png){#fig-gdp-pc-employment}
+![Average GDP per capita by World Bank income group, 2000–2023.](figures/gdp_percapita_by_income.png){#fig-gdp-pc-income width=50%}
 
-![Average GDP per capita by World Bank income group, 2000–2023.](figures/gdp_percapita_by_income.png){#fig-gdp-pc-income}
+![Global mean GDP per capita, GDP growth, and employment ratios over time.](figures/global_indicator_trends.png){#fig-global-trends width=50%}
 
-![Global mean GDP per capita, GDP growth, and employment ratios over time.](figures/global_indicator_trends.png){#fig-global-trends}
-
-![Trends in economic indicators over time by World Bank income group.](figures/indicator_trends_by_income.png){#fig-trends-by-income}
-
-```{python}
-#| label: tbl-desc-income
-#| tbl-cap: "Descriptive statistics for GDP per capita, GDP growth, and employment by income group."
-
-import pandas as pd
-pd.read_csv("figures/descriptive_stats_by_income.csv")
-```
-
-```{python}
-#| label: tbl-desc-yearly
-#| tbl-cap: "Yearly averages of key economic indicators aggregated across income groups."
-
-pd.read_csv("figures/descriptive_stats_yearly.csv")
-```
+![Trends in economic indicators over time by World Bank income group.](figures/indicator_trends_by_income.png){#fig-trends-by-income width=50%}
 
 
 ## Results & Discussion 
