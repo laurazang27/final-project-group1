@@ -65,11 +65,6 @@ summary_year.head()
 ```
 
 ## Data Analysis
-![Correlation between GDP growth and employment-to-population ratios by income group.](figures/gdp_employment_pearson_correlations.png){#fig-gdp-emp-corr}
-
-![Distribution of annual GDP growth rates by income group, 2000–2023.](figures/gdp_growth_box.png){#fig-gdp-growth-box width=50%}
-
-![Relationship between GDP per capita and employment-to-population ratios by income group.](figures/gdp_pc_vs_employment_scat.png){#fig-gdp-pc-employment width=50%}
 
 ![Average GDP per capita by World Bank income group, 2000–2023.](figures/gdp_percapita_by_income.png){#fig-gdp-pc-income width=50%}
 
@@ -77,6 +72,11 @@ summary_year.head()
 
 ![Trends in economic indicators over time by World Bank income group.](figures/indicator_trends_by_income.png){#fig-trends-by-income width=50%}
 
+![Distribution of annual GDP growth rates by income group, 2000–2023.](figures/gdp_growth_box.png){#fig-gdp-growth-box width=50%}
+
+![Relationship between GDP per capita and employment-to-population ratios by income group.](figures/gdp_pc_vs_employment_scat.png){#fig-gdp-pc-employment width=50%}
+
+![Correlation between GDP growth and employment-to-population ratios by income group.](figures/gdp_employment_pearson_correlations.png){#fig-gdp-emp-corr}
 
 ## Results & Discussion 
 
