@@ -1,9 +1,9 @@
 ---
 title: "Economic Development Across Income Groups"
 author: 
-    - Mark Arshavsky ((2556041))
-    - Chloe Guerrero
-    - Tiffany Wickens 
+    - Mark Arshavsky (2556041)
+    - Chloe Guerrero (2578787)
+    - Tiffany Wickens (2537894)
     - Laura Zang (2549139)
     - Chloe Zhao (2593352)
 
@@ -65,23 +65,51 @@ summary_year.head()
 
 ## Data Analysis
 
+![Correlation between GDP growth and employment-to-population ratios by income group.](figures/gdp_employment_pearson_correlations.png){#fig-gdp-emp-corr}
+
+![Distribution of annual GDP growth rates by income group, 2000–2023.](figures/gdp_growth_box.png){#fig-gdp-growth-box}
+
+![Relationship between GDP per capita and employment-to-population ratios by income group.](figures/gdp_pc_vs_employment_scat.png){#fig-gdp-pc-employment}
+
+![Average GDP per capita by World Bank income group, 2000–2023.](figures/gdp_percapita_by_income.png){#fig-gdp-pc-income}
+
+![Global mean GDP per capita, GDP growth, and employment ratios over time.](figures/global_indicator_trends.png){#fig-global-trends}
+
+![Trends in economic indicators over time by World Bank income group.](figures/indicator_trends_by_income.png){#fig-trends-by-income}
+
+```{python}
+#| label: tbl-desc-income
+#| tbl-cap: "Descriptive statistics for GDP per capita, GDP growth, and employment by income group."
+
+import pandas as pd
+pd.read_csv("figures/descriptive_stats_by_income.csv")
+```
+
+```{python}
+#| label: tbl-desc-yearly
+#| tbl-cap: "Yearly averages of key economic indicators aggregated across income groups."
+
+pd.read_csv("figures/descriptive_stats_yearly.csv")
+```
+
+
 ## Results & Discussion 
 
 ### Differences in Economic Outcomes Across Income Groups
 
-Figure @fig:gdp-percap-income illustrates substantial differences in average GDP per capita across World Bank income classifications over the 2000–2023 period. High-income countries exhibit by far the highest average GDP per capita, exceeding \$35,000 (constant USD), while upper-middle-income countries average approximately \$6,000. Lower-middle-income and low-income countries trail significantly behind, with average GDP per capita below \$3,000 and \$1,000 respectively. These disparities highlight persistent global inequality in income levels and economic capacity.
+@fig-gdp-pc-income illustrates substantial differences in average GDP per capita across World Bank income classifications over the 2000–2023 period. High-income countries exhibit by far the highest average GDP per capita, exceeding \$35,000 (constant USD), while upper-middle-income countries average approximately \$6,000. Lower-middle-income and low-income countries trail significantly behind, with average GDP per capita below \$3,000 and \$1,000 respectively. These disparities highlight persistent global inequality in income levels and economic capacity.
 
 In contrast, employment-to-population ratios show relatively modest variation across income groups (Table 1). While low-income countries tend to exhibit slightly higher employment ratios than high-income countries, the differences are small relative to income gaps. This suggests that employment rates alone do not capture differences in economic well-being, as employment in lower-income countries may be concentrated in lower-productivity and lower-wage activities.
 
 ### Global Trends in Economic Indicators Over Time
 
-Figure @fig:global-trends presents average global trends in GDP per capita, GDP growth, and employment-to-population ratios. GDP per capita increases steadily from 2000 through 2019, reflecting sustained global economic expansion. A sharp decline occurs in 2020, coinciding with the economic impacts of the COVID-19 pandemic, followed by a partial recovery in subsequent years.
+@fig-global-trends presents average global trends in GDP per capita, GDP growth, and employment-to-population ratios. GDP per capita increases steadily from 2000 through 2019, reflecting sustained global economic expansion. A sharp decline occurs in 2020, coinciding with the economic impacts of the COVID-19 pandemic, followed by a partial recovery in subsequent years.
 
 GDP growth rates display greater year-to-year volatility than GDP per capita, fluctuating around 2–4% for most of the sample period. The most pronounced contraction appears in 2020, when global growth becomes strongly negative. Employment-to-population ratios remain relatively stable over time, though a noticeable decline around 2020 indicates widespread labor market disruptions during the global downturn.
 
 ### Income-Group-Specific Dynamics
 
-Disaggregating trends by income group reveals important heterogeneity (Figure @fig:trends-by-income). High-income countries consistently maintain the highest GDP per capita throughout the period, with gradual long-term growth interrupted mainly by global crises such as the 2008 financial crisis and the COVID-19 pandemic. Upper-middle-income countries experience steady growth in GDP per capita, modestly narrowing the gap with high-income economies, although substantial differences remain.
+Disaggregating trends by income group reveals important heterogeneity (@fig-trends-by-income). High-income countries consistently maintain the highest GDP per capita throughout the period, with gradual long-term growth interrupted mainly by global crises such as the 2008 financial crisis and the COVID-19 pandemic. Upper-middle-income countries experience steady growth in GDP per capita, modestly narrowing the gap with high-income economies, although substantial differences remain.
 
 GDP growth rates across income groups follow similar cyclical patterns, suggesting that global economic shocks affect countries across development levels simultaneously. However, growth volatility is more pronounced in middle- and lower-income countries, indicating greater macroeconomic vulnerability. Employment-to-population ratios differ more visibly: low-income countries generally maintain higher employment ratios, while high-income countries exhibit lower but more stable employment levels, reflecting differences in demographics, labor market institutions, and economic structure.
 
